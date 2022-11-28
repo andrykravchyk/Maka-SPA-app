@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/MakaSPA.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <!-- <link rel="manifest" href="../favicon_io/site.webmanifest"> -->
+    <title>Mąka</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div onclick="toggleBox('push')" class="mobileclick">Menu</div>
+
+        <div class="header" id="home">
+            <div class="header__nav">
+                <ul id="push" class="navigate">
+                    <li id="admin"><a href="#">Log in</a></li>
+                    <li><a href="#onas">O nas</a></li>
+                    <li><a href="#produkty">Nasze produkty</a></li>
+                    <li><a href="#slider"><img src="../images/logo8.png" alt="Logotype"></a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#franczyza">Franczyza</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="login-window control-wrapper">
+            <label for="username">Username:</label>
+            <input class="form-control" id="username" type="text" placeholder="Enter your username">
+            <br>
+            <label for="password">Password:</label>
+            <input class="form-control" id="password" type="password" placeholder="Enter your password">
+            <br>
+            <button type="submit" id="enter" class="btn-log">Zaloguj</button>
+            <button type="submit" id="exit" class="btn-log">Zamknij</button>
+        </div>
+
+
+        <div class="slider" id="slider">
+            <ul class="slides">
+                <input type="radio" name="radio-btn" id="img-1" checked>
+                <li class="slide-container">
+                    <div class="slide">
+                        <img src="../images/DSCF6090.jpg" alt="1">
+                    </div>
+                    <div class="nav">
+                        <label for="img-5" class="prev">&#x2039</label>
+                        <label for="img-2" class="next">&#x203a</label>
+                    </div>
+                </li>
+                <input type="radio" name="radio-btn" id="img-2">
+                <li class="slide-container">
+                    <div class="slide">
+                        <img src="../images/DSCF5949.jpg" alt="2">
+                    </div>
+                    <div class="nav">
+                        <label for="img-1" class="prev">&#x2039</label>
+                        <label for="img-3" class="next">&#x203a</label>
+                    </div>
+                </li>
+                <input type="radio" name="radio-btn" id="img-3">
+                <li class="slide-container">
+                    <div class="slide">
+                        <img src="../images/DSCF6302.jpg" alt="3">
+                    </div>
+                    <div class="nav">
+                        <label for="img-2" class="prev">&#x2039</label>
+                        <label for="img-4" class="next">&#x203a</label>
+                    </div>
+                </li>
+                <input type="radio" name="radio-btn" id="img-4">
+                <li class="slide-container">
+                    <div class="slide">
+                        <img src="../images/DSCF6597.jpg" alt="4">
+                    </div>
+                    <div class="nav">
+                        <label for="img-3" class="prev">&#x2039</label>
+                        <label for="img-5" class="next">&#x203a</label>
+                    </div>
+                </li>
+                <input type="radio" name="radio-btn" id="img-5">
+                <li class="slide-container">
+                    <div class="slide">
+                        <img src="../images/DSCF6678.jpg" alt="5">
+                    </div>
+                    <div class="nav">
+                        <label for="img-4" class="prev">&#x2039</label>
+                        <label for="img-1" class="next">&#x203a</label>
+                    </div>
+                </li>
+                <li class="nav-dots">
+                    <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                    <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                    <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                    <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+                    <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- <div class="backForMobile" id="backForMobile">
+            <img src="../images/DSCF6090.jpg" alt="background photo">
+            <img src="i../mages/logo8.png" alt="Logotype">
+        </div> -->
+
+        <div class="block__content" id="content">
+            <div class="block__content_container">
+                <div class="block__content-one">
+                    <div class="block__content-text">
+                        <h2>Wypieki zza Buga!</h2>
+                        <p>Z nami poznasz prawdziwy smak!</p>
+                    </div>
+                    <div class="block__content-picture"><img src="../images/DSCF8012.jpg"
+                            alt="photo product1"></div>
+                    <div class="block__content-picture"><img
+                            src="../images/telegram/IMG_7262.JPG" alt="photo product2"></div>
+                </div>
+            </div>
+
+            <div class="block__content_container two">
+                <div class="block__content-two">
+                    <div class="block__content-title _anim-items _anim-no-hide">
+                        <h2>BEST&shySELLERY</h2>
+                        <p>Na podstawie wyboru naszych klientów</p>
+                    </div>
+                    <div class="block__row">
+                        <div class="block__content-item _anim-items _anim-no-hide">
+                            <img src="../images/bestseller1.png" alt="photo bestseller1">
+                            <p>Bułka w cieście francuskim z wiśnią i czekoladą</p>
+                            <div class="block__content-circle"><img src="../images/белое сердце.png"
+                                    alt="Лого белое сердце"></div>
+                        </div>
+                        <div class="block__content-item _anim-items _anim-no-hide">
+                            <img src="../images/chaczapuri ser szpinak.jpg" alt="photo bestseller2">
+                            <p>Chaczapuri z serem i szpinakiem</p>
+                            <div class="block__content-circle"><img src="../images/белое сердце.png"
+                                    alt="Лого белое сердце"></div>
+                        </div>
+                        <div class="block__content-item _anim-items _anim-no-hide">
+                            <img src="../images/kisz ser pieczarki kurczak.jpg" alt="photo bestseller3">
+                            <p>Kisz z kurczakiem i pieczarkami</p>
+                            <div class="block__content-circle"><img src="../images/белое сердце.png"
+                                    alt="Лого белое сердце"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content__O-nas" id="onas">
+
+            <h1 class="fullscreen__title _anim-items _anim-no-hide">O nas</h1>
+
+            <div class="content__O-nas-row content__O-nas-row_one">
+
+                <div class="content__O-nas-picture content__O-nas-picture_one _anim-items _anim-no-hide">
+                    <img src="../images/telegram/IMG_7952.JPG" alt="Picture1">
+                </div>
+
+                <div class="content__O-nas-text content__O-nas-text_one _anim-items _anim-no-hide">
+                    <h2>Nowoczesna piekarnia w centrum Łodzi</h2>
+                    <p>Piekarnia – Cukiernia “Mąka” to połączenie starych tradycyjnych przepisów i kultur wschodnich
+                        krajów w nowoczesnym wydaniu. Stworzyliśmy naszą piekarnie z dbałością o każdy szczegół żeby
+                        nasz klient był codziennie zadowolony. Ważne dla nas jest przekazanie naturalnych smaków,
+                        zapachów i jakości naszych wypieków bez dodadku żadnych substacji polepszających. W „Mące”
+                        codziennie czekają na ciebie świeżo ulepione i wypieczone produkty z najlepszych składników.
+                        Dbamy również o to żeby nasycić wesołym nastrojem i uśmiechniętą atmosferą, słonecznego wschodu,
+                        każdego klienta.</p>
+                </div>
+
+            </div>
+
+            <div class="content__O-nas-video _anim-items _anim-no-hide">
+                <video controls="controls" src="../video/IMG_9868.MOV"></video>
+            </div>
+
+            <div class="content__O-nas-row content__O-nas-row_two">
+
+                <div class="content__O-nas-text content__O-nas-text_two _anim-items _anim-no-hide">
+                    <h2>Składniki i produkty najwyższej jakości</h2>
+                    <p>Stosujemy tylko naturalne i świeże składniki pochodzące z okolicznych farm i młynów, dobrane
+                        przez naszego głównego piekarza z wieloletnim doświadczeniem. Wszystkie wypieki które spotkacie
+                        na naszych półkach są codziennie robione z podstawowych składników najlpszej jakości (mąka,
+                        woda, cukier, sól). NIE zamrażamy naszych wyrobów i NIE odgrzewamy, tylko codziennie starannie
+                        wypiekamy je z miłością na miejscu.</p>
+                    <p>W naszej ofercie zobaczycie jak słone tak i słodkie wypieki.</p>
+                </div>
+
+                <div class="content__O-nas-picture content__O-nas-picture_two _anim-items _anim-no-hide">
+                    <img src="../images/telegram/Jakost3.png" alt="Picture2">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="content__Nasze-produkty" id="produkty">
+            <div class="basket">
+                <img class="inBasket" src="../images/pngwing.png" alt="basket">
+                <span class="amount"></span>
+            </div>
+
+            <h1 class="content__Nasze-produkty_title">Nasze produkty</h1>
+
+            <h2>Chleb</h2>
+
+            <div class="chleb">
+                <h2>Chleb</h2>
+                <h2>Chleb</h2>
+            </div>
+
+            <h2>Wypieki wytrawne</h2>
+
+            <div class="wytrawne">
+            </div>
+
+            <h2>Wypieki na słodko</h2>
+
+            <div class="słodko">
+            </div>
+
+            <h2>Napoje</h2>
+
+            <div class="napoje">
+            </div>
+
+        </div>
+
+        <div class="content__Events" id="events">
+
+            <h1 class="fullscreen__title _anim-items _anim-no-hide">Events</h1>
+
+            <div class="content__Events-text _anim-items _anim-no-hide">
+                <p>Nasza piekarnia chętnie wykonuje indywidualne zamówienia na większe ilości.</p>
+                <p>&#8212; Jeżeli szukasz inspiracji dla kateringu na imprezę.</p>
+                <p>&#8212; Prowadzisz firmę i chcesz miło zaskoczyć pracowników pysznymi wypiekami.</p>
+                <p>&#8212; Masz urodziny i chcesz poczęstować ludzi czymś nietypowym.</p>
+                <p>&#8212; Masz imprezę firmowa i szukasz dobrego jedzenia dla każdego.</p>
+                <p>Piekarnia &#8212; Cukiernia „Mąka” chętnie podejmuje współpracę rozwijającymi się firmami.</p>
+                <p>Wymyśliłem coś ciekawego? Śmiało się odzywaj do nas!</p>
+            </div>
+
+            <div class="content__Events-row">
+
+                <div class="content__Events-picture content__Events-picture_one _anim-items _anim-no-hide">
+                    <img src="../images/Events-1.jpg" alt="Events-picture1">
+                </div>
+
+                <div class="content__Events-picture content__Events-picture_two _anim-items _anim-no-hide">
+                    <img src="../images/Events-2.JPG" alt="Events-picture2">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="content__Franczyza" id="franczyza">
+
+            <h1 class="fullscreen__title _anim-items _anim-no-hide">Franczyza</h1>
+
+            <div class="content__Franczyza-row content__Franczyza-row_one">
+                <div class="content__Franczyza-item content__Franczyza-item_one _anim-items _anim-no-hide">
+                    <p>Piekarnicze wyroby zawsze mają popyt, toż odkrycie własnej piekarni - dobra decyzja dla
+                        przedsiębiorców. Niewielkie zakłady nie zawsze wytrzymują konkurencję, a realizacja dużych
+                        projektów wymaga istotnych iwestycji. Piekarni nigdy nie brakuje klientów, a jeśli specjalizuje
+                        się w wypiekach niedostępnych w okolicy, to może zrobić prawdziwą furorę. Optymalnym wyborem
+                        jest franszyza piekarni, która pozwoli pracować pod popularnym znakiem firmowym i uniknąć błędów
+                        podczas prowadzenia biznesu.
+                    </p>
+                </div>
+                <div class="content__Franczyza-item content__Franczyza-item_two _anim-items _anim-no-hide">
+                    <div class="content__Franczyza-frame">
+                        <div class="content__Franczyza-boxes">
+                            <div class="content__Franczyza-box"><img src="../images/telegram/IMG_7263.JPG" alt="Picture1">
+                            </div>
+                            <div class="content__Franczyza-box"><img src="../images/telegram/IMG_7241.JPG" alt="Picture2">
+                            </div>
+                            <div class="content__Franczyza-box"><img src="../images/telegram/IMG_7258.JPG" alt="Picture3">
+                            </div>
+                            <div class="content__Franczyza-box"><img src="../images/telegram/IMG_7244.JPG" alt="Picture4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__Franczyza-item content__Franczyza-item_mobile _anim-items _anim-no-hide">
+                    <img src="../images/telegram/IMG_7255.JPG" alt="Picture5">
+                </div>
+            </div>
+
+            <div class="content__Franczyza-row content__Franczyza-row_two">
+                <div class="content__Franczyza-item content__Franczyza-item_three _anim-items _anim-no-hide">
+                    <h2>Dlaczego Franczyza?</h2>
+                    <p>Piekarnicze wyroby zawsze mają popyt, toż odkrycie własnej piekarni - dobra decyzja dla
+                        Samodzielne otwarcie piekarni – szczególnie przez osobę niedoświadczoną – bywa trudne i nigdy
+                        nie
+                        wiadomo, czy biznes się powiedzie. Inaczej jest, kiedy od samego początku wiemy, jak powinna
+                        działać
+                        piekarnia. Franczyza pozwala funkcjonować od pierwszego dnia w najwyższym standardzie.
+                        Przedsiębiorca prowadzący franczyzową piekarnię ma dostęp do składników najlepszej jakości,
+                        sprawdzonych receptur pozwalających na przygotowanie oryginalnych wypieków.
+                    </p>
+                </div>
+
+                <div class="content__Franczyza-item content__Franczyza-item_mobile _anim-items _anim-no-hide">
+                    <img src="../images/telegram/IMG_7258.JPG" alt="Picture6">
+                </div>
+
+                <div class="content__Franczyza-item content__Franczyza-item_four _anim-items _anim-no-hide">
+                    <h2>Co oferujemy?</h2>
+                    <p>&#8212; Działarność pod znaną marką</p>
+                    <p>&#8212; Konsultacje i wsparcie na każdym etapie otwierania i prowadzenia piekarni</p>
+                    <p>&#8212; Wyjątkowe receptury</p>
+                    <p>&#8212; Szkolenia pracowników</p>
+                    <p>&#8212; Pomóc w wyborze lokalu i dostasowaniu go do wymogów sanepid</p>
+                    <p>&#8212; Dostęp do dostawców z wyspecjolizowanymi cenami na surowcze i wyposażenie</p>
+                    <p>&#8212; Marketing</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content__Kontakt" id="kontakt">
+            <div class="content__Kontakt-row">
+                <div class="content__Kontakt-item content__Kontakt-item_one _anim-items _anim-no-hide">
+                    <h1>Dane Kontaktowe</h1>
+
+                    <h4>Mąka &#8212; ul.Narutowicza 44, 90-135 Łódź</h4>
+                    <p>tel.: +48 602 298 737</p>
+                    <p>wypieki.zza.buga@gmail.com</p>
+                    <p>Godziny otwarcia: pn.-pt. 7:00-19:00, sb. 09:00-16:00, niedz. - nieczynne</p>
+
+                    <h4>Mąka &#8212; ul.Andrzeja Struga 5, 90-420 Łódź</h4>
+                    <p>tel.: +48 787 042 131</p>
+                    <p>wypieki.zza.buga@gmail.com</p>
+                    <p>Godziny otwarcia: pn.-pt. 7:00-19:00, sb. 09:00-16:00, niedz. - nieczynne</p>
+                    <p>NIP: 7262686083</p>
+                </div>
+                <div class="content__Kontakt-item content__Kontakt-item_two _anim-items _anim-no-hide">
+                    <h2>Lokalizacja</h2>
+                    <div class="content__Kontakt-map">
+                        <iframe
+                            src="https://www.google.com/maps/d/u/0/embed?mid=1VQPt1MOTh6B6Md9Gnr_QS9HXglyXGi9D&ehbc=2E312F">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="basketPage" id="basketPage">
+            <table id="basketTable">
+                <tr>
+                    <th>Nazwa</th>
+                    <th>Cena (zl)</th>
+                    <th>Picture</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+            <button type="submit" id="btn5" class="btn btn-primary">Przejdź do kasy</button>
+        </div>
+
+        <div class="orderPage" id="orderPage">
+            <h2>Dostawa jest ważna tylko na terenie Łodzi!</h2>
+            <!-- <form  method = "post" action="http://formspree.io/andrykravchyk@yandex.ru" name="order" id="order"> -->
+            <form  method = "post" action="#" name="order" id="order">
+                <div class="form-group control-wrapper">
+                    <label for="userName">Imię:</label>
+                    <input class="form-control _req" id="userName" name="userName" placeholder="Wpisz imię">
+                </div>
+                <div class="form-group control-wrapper">
+                    <label for="surName">Nazwisko:</label>
+                    <input class="form-control _req" id="surName" name="surName" placeholder="Wpisz nazwisko">
+                </div>
+                <div class="form-group control-wrapper">
+                    <label for="userEmail">E-mail:</label>
+                    <input class="form-control _req _email" id="userEmail" name="userEmail" placeholder="Wpisz e-mail">
+                </div>
+                <div class="form-group control-wrapper">
+                    <label for="userTelefon">Telefon:</label>
+                    <input class="form-control _req" id="userTelefon" name="userTelefon" placeholder="Wpisz numer telefonu">
+                </div>
+                <div class="form-group control-wrapper">
+                    <label for="userAddres">Adres zamieszkania:</label>
+                    <input class="form-control _req" id="userAddres" name="userAddres" placeholder="Wpisz adres">
+                </div>
+                <button type="button" id="btn7" class="btn1 btn-primary">Powrót do koszyka</button>
+                <button type="submit" id="btn6" class="btn btn-primary">Wyślij zamówienie</button>
+
+            </form>
+        </div>
+
+        <div class="footer__container">
+            <div class="footer">
+                <div class="footer__information">
+                    <a href="#home"><img src="../images/logo8.png" alt="Logotype"></a>
+                    <p>Piekarnia – Cukiernia “Mąka” to połączenie starych tradycyjnych przepisów i kultur wschodnich
+                        krajów w nowoczesnym wydaniu.</p>
+                    <p>Follow us: <a target="_blank" href="https://m.facebook.com/makalodz/"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/maka_lodz/"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </p>
+                </div>
+                <div class="footer__location">
+                    <h3>LOCATIONS</h3>
+                    <p>Polska, 90-135,Łódź, ul.Narutowicza 44</p>
+                    <p>Polska, 90-420, Łódź, ul.Andrzeja Struga 5</p>
+                </div>
+                <div class="footer__instagram">
+                    <h3>INSTAGRAM FEED</h3>
+                    <div class="footer__instagram_grid">
+                        <div class="footer__instagram_item"><a target="_blank"
+                                href="https://www.instagram.com/p/CUzi0hhDbeT/"><img src="../images/telegram/IMG_2063.JPG"
+                                    alt="Photo1"></a></div>
+                        <div class="footer__instagram_item"><a target="_blank"
+                                href="https://www.instagram.com/p/CVw4cz8ojw5/"><img src="../images/telegram/IMG_3163.JPG"
+                                    alt="Photo2"></a></div>
+                        <div class="footer__instagram_item"><a target="_blank"
+                                href="https://www.instagram.com/p/CP5mW4LLjvt/"><img src="../images/telegram/IMG_8967.JPG"
+                                    alt="Photo3"></a></div>
+                        <div class="footer__instagram_item"><a target="_blank"
+                                href="https://www.instagram.com/p/COKdoPzjha7/"><img src="../images/telegram/IMG_8037.JPG"
+                                    alt="Photo4"></a></div>
+                        <div class="footer__instagram_item"><a target="_blank"
+                                href="https://www.instagram.com/p/CPV2jc2jrGv/"><img src="../images/telegram/IMG_8737.JPG"
+                                    alt="Photo5"></a></div>
+                        <div class="footer__instagram_item"><a target="_blank"
+                                href="https://www.instagram.com/p/CQu9qWjDupf/"><img src="../images/telegram/IMG_9297.JPG"
+                                    alt="Photo6"></a></div>
+                    </div>
+                </div>
+                <div class="footer__contact">
+                    <h3>CONTACTS</h3>
+                    <p>+48 602 298 737</p>
+                    <p>+48 787 042 131</p>
+                    <p>wypieki.<wbr>zza.<wbr>buga@gmail.com</p>
+                    <p>Poniedziałek &#8212; Piątek:<br> 7:00 am - 19:00 pm</p>
+                    <p>Sobota: <br> 9:00 am - 16:00 pm</p>
+                    <p>Niedziela: Nieczynne</p>
+
+                </div>
+            </div>
+            <p>Copyright &#169;2022 All rights reserved &#124; This template is made by AndryKravchyk
+            </p>
+        </div>
+    </div>
+    <script src="../js/MakaSPA.js"></script>
+</body>
+
+</html>

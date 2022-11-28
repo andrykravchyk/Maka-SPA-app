@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/MakaSPA.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io/site.webmanifest">
+    <title>Admin</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div onclick="toggleBox('push')" class="mobileclick">Menu</div>
+
+        <div class="header" id="home">
+            <div class="header__nav">
+                <ul id="push" class="navigate">
+                    <li><a href="SPA_MAKA.html#home">Wyjście</a></li>
+                    <li class="adminHidden"><a href="#onas">O nas</a></li>
+                    <li class="adminHidden"><a href="#produkty">Nasze produkty</a></li>
+                    <li><img src="../images/logo8.png" alt="Logotype"></li>
+                    <li class="adminHidden"><a href="#events">Events</a></li>
+                    <li class="adminHidden"><a href="#franczyza">Franczyza</a></li>
+                    <li class="adminHidden"><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="admin">
+
+            <button class="addUser">Dodaj produkt!</button>
+
+            <div class="container-lg form-wrapper">
+                <form enctype="multipart/form-data" name="form1">
+                    <button type="submit" id="btn4" class="btn2 btn-primary zakr"><img src="../images/krestik.png" alt=""></button>
+                    <div class="form-group control-wrapper">
+                        <label for="name">Nazwa:</label>
+                        <input class="form-control" id="name" name="name" placeholder="Wpisz nazwy">
+                    </div>
+                    <div class="form-group control-wrapper">
+                        <label for="category">Kategoria:</label>
+                        <input class="form-control" id="category" name="category" placeholder="Wpisz kategorię">
+                    </div>
+                    <div class="form-group control-wrapper">
+                        <label for="inStock">W magazynie:</label>
+                        <input class="form-control" id="inStock" name="inStock" placeholder="Enter category"
+                            type="checkbox">
+                    </div>
+                    <div class="form-group control-wrapper">
+                        <label for="price">Cena:</label>
+                        <input class="form-control" id="price" name="price" placeholder="Wpisz cenę">
+                    </div>
+                    <div class="form-group control-wrapper">
+                        <label for="file">Plik:</label>
+                        <input type="file" class="form-control" id="file" name="file" placeholder="Wybierz plik">
+                    </div>
+                    <button type="reset" id="btn3" class="btn1 btn-primary">Anulowanie</button>
+                    <button type="submit" id="btn2" class="btn btn-primary">Zastąpić</button>
+                    <button type="submit" id="btn1" class="btn btn-primary">Wysłać</button>
+                </form>
+            </div>
+
+            <table id="gameboard">
+                <tr>
+                    <th>Id</th>
+                    <th>Kategoria</th>
+                    <th>Nazwa</th>
+                    <th>W magazynie</th>
+                    <th>Cena</th>
+                    <th>Plik</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class="footer__container">
+            <div class="footer">
+                <div class="footer__information">
+                    <a href="#home"><img src="../images/logo8.png" alt="Logotype"></a>
+                    <p>Piekarnia – Cukiernia “Mąka” to połączenie starych tradycyjnych przepisów i kultur wschodnich
+                        krajów w nowoczesnym wydaniu.</p>
+                    <p>Follow us: <a target="_blank" href="https://m.facebook.com/makalodz/"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/maka_lodz/"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </p>
+                </div>
+                <div class="footer__location">
+                    <h3>LOCATIONS</h3>
+                    <p>Polska, 90-135,Łódź, ul.Narutowicza 44</p>
+                    <p>Polska, 90-420, Łódź, ul.Andrzeja Struga 5</p>
+                </div>
+                <div class="footer__instagram">
+                    <h3>INSTAGRAM FEED</h3>
+                    <div class="footer__instagram_grid">
+                        <div class="footer__instagram_item"><a target="_blank"
+                                href="https://www.instagram.com/p/CUzi0hhDbeT/"><img src="../images/telegram/IMG_2063.JPG"
+                                    alt="Photo1"></a></div>
+                        <div class="footer__instagram_item"><a target="_blank"
+                                href="https://www.instagram.com/p/CVw4cz8ojw5/"><img src="../images/telegram/IMG_3163.JPG"
+                                    alt="Photo2"></a></div>
+                        <div class="footer__instagram_item"><a target="_blank"
+                                href="https://www.instagram.com/p/CP5mW4LLjvt/"><img src="../images/telegram/IMG_8967.JPG"
+                                    alt="Photo3"></a></div>
+                        <div class="footer__instagram_item"><a target="_blank"
+                                href="https://www.instagram.com/p/COKdoPzjha7/"><img src="../images/telegram/IMG_8037.JPG"
+                                    alt="Photo4"></a></div>
+                        <div class="footer__instagram_item"><a target="_blank"
+                                href="https://www.instagram.com/p/CPV2jc2jrGv/"><img src="../images/telegram/IMG_8737.JPG"
+                                    alt="Photo5"></a></div>
+                        <div class="footer__instagram_item"><a target="_blank"
+                                href="https://www.instagram.com/p/CQu9qWjDupf/"><img src="../images/telegram/IMG_9297.JPG"
+                                    alt="Photo6"></a></div>
+                    </div>
+                </div>
+                <div class="footer__contact">
+                    <h3>CONTACTS</h3>
+                    <p>+48 602 298 737</p>
+                    <p>+48 787 042 131</p>
+                    <p>wypieki.<wbr>zza.<wbr>buga@gmail.com</p>
+                    <p>Poniedziałek &#8212; Piątek:<br> 7:00 am - 19:00 pm</p>
+                    <p>Sobota: <br> 9:00 am - 16:00 pm</p>
+                    <p>Niedziela: Nieczynne</p>
+
+                </div>
+            </div>
+            <p>Copyright &#169;2022 All rights reserved &#124; This template is made by AndryKravchyk
+            </p>
+        </div>
+    </div>
+    <script src="../js/MakaAdmin.js"></script>
+</body>
+
+</html>
